@@ -12,10 +12,23 @@ body, html {
     line-height: 1.5;
 }
 
-button {
+input, button {
     outline: none !important;
     border: none;
     background: transparent;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fffcfc;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fffcfc;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fffcfc;
 }
 
 @font-face {

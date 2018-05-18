@@ -1,39 +1,32 @@
 <div class="login-container">
   <div class="login-wrapper">
     <form class="login-form">
-      <span class="login-form-title p-b-26">krystal clear fashion</span>
+      <span class="login-form-title p-b-80">krystal clear fashion</span>
 
-      <div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c">
-        <input class="input100" type="text" name="email">
-        <span class="focus-input100" data-placeholder="Email"></span>
+      <div class="input-wrapper validate-input" data-validate="Valid email is: a@b.c">
+        <input type="text" name="name" placeholder="Username">
       </div>
 
-      <div class="wrap-input100 validate-input" data-validate="Enter password">
-        <span class="btn-show-pass">
-          <i class="zmdi zmdi-eye"></i>
-        </span>
-        <input class="input100" type="password" name="pass">
-        <span class="focus-input100" data-placeholder="Password"></span>
+      <div class="input-wrapper validate-input" data-validate="Enter password">
+        <input type="password" name="password" placeholder="Password">
       </div>
 
-      <div class="container-login100-form-btn">
-        <div class="wrap-login100-form-btn">
-          <div class="login100-form-bgbtn"></div>
-          <button class="login100-form-btn" type="button" (click)="onLoginClick()">
+      <div class="login-btn-container">
+        <div class="login-btn-wrapper">
+          <button class="login-form-btn" type="button" (click)="onLoginClick()">
             Login
           </button>
         </div>
       </div>
 
-      <div class="text-center p-t-115">
-        <span class="txt1">
-          Don’t have an account?
-        </span>
-
-        <a class="txt2" href="#">
-          Sign Up
-        </a>
+      <div class="extra-btn-container">
+        <span class="left">Create an account</span>
+        <span class="right">Forget Password?</span>
       </div>
+
+      <div class="extra-btn-container options">
+          <div>or login with</div>
+        </div>
     </form>
   </div>
 </div>
