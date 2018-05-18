@@ -149,3 +149,34 @@
     top: calc(50% - 2px);
     opacity: 0.5;
 }
+
+.extra-btn-container.oauth {
+    height: 45px;
+}
+
+.facebook-btn, .gmail-btn {
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-size: 17px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-family: oB;
+}
+
+.facebook-btn {
+    border-radius: 20px 0 0 20px;
+    background-image: url(../../assets/images/facebook-logo.png);
+    background-repeat: no-repeat;
+    background-position: 15px 9px;
+    background-size: 25px;
+}
+
+.gmail-btn {
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    background-image: url(../../assets/images/google-plus-logo.svg);
+    background-repeat: no-repeat;
+    background-position: 20px 9px;
+    background-size: 25px;
+}
