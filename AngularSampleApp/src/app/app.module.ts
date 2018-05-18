@@ -12,6 +12,7 @@ import {
   AuthGuardService as AuthGuard
 } from './signin/auth-guard.service';
 import { AuthService } from './signin/auth.service';
+import { PhotoComponent } from './photo/photo.component';
 
 const ROUTES: Route[] = [
   { path: '', component: SigninComponent },
@@ -27,7 +28,8 @@ const ROUTES: Route[] = [
   declarations: [
     AppComponent,
     HomeComponent,
-    SigninComponent
+    SigninComponent,
+    PhotoComponent
   ],
   imports: [
     BrowserModule,

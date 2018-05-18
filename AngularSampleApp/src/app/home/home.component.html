@@ -1,3 +1,15 @@
-<p>
-  home works!
-</p>
+<header>
+  <div class="header-bar">
+    <div class="header-bar-left">
+      <img class="">
+    </div>
+    <div class="header-bar-right"></div>
+  </div>
+</header>
+
+<div class="home-container">
+  <div class="home-wrapper">
+    <app-photo *ngFor="let photo of photosList" class="product-item" [photo]="photo">
+    </app-photo>
+  </div>
+</div>
