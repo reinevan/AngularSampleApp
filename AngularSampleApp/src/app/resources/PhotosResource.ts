@@ -1,7 +1,7 @@
 import { Resource, ResourceParams, ResourceAction, IResourceMethod, ResourceHandler } from '@ngx-resource/core';
 import { Injectable } from '@angular/core';
 
-export interface IPhotos {
+export interface IPhoto {
   albumId: number,
   id: number,
   title: string,
@@ -19,7 +19,7 @@ export class PhotosResource extends Resource {
     path: '/photos',
     expectJsonArray: true
   })
-  getPhotos: IResourceMethod<null, IPhotos>;
+  getPhotos: IResourceMethod<null, IPhoto[]>;
 
   constructor(restHandler: ResourceHandler) {
     super(restHandler);

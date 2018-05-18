@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PhotosResource, IPhoto } from '../resources/PhotosResource';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  photosList: IPhoto[] = [];
+
+  constructor(private photosRes: PhotosResource) { }
 
   ngOnInit() {
+    this.photosRes.getPhotos(null, (receivedPhotos: IPhoto[]) => {
+      this.photosList = receivedPhotos;
+    });
   }
-
 }

@@ -2,7 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Route, RouterModule, CanActivate } from '@angular/router';
 import { ResourceModule } from '@ngx-resource/handler-ngx-http';
+import { HttpClientModule } from '@angular/common/http';
 
+import { PhotosResource } from './resources/PhotosResource';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SigninComponent } from './signin/signin.component';
@@ -30,9 +32,10 @@ const ROUTES: Route[] = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES),
-    ResourceModule.forRoot()
+    ResourceModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [AuthGuard, AuthService],
+  providers: [AuthGuard, AuthService, PhotosResource],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
